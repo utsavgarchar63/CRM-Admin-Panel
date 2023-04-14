@@ -26,14 +26,6 @@ module.exports.Insert_package = async (req, res) => {
           res.redirect('back')
      })
 }
-// module.exports.View_package = async (req,res)=>{
-//      const packageData = await package.find({}).populate('destination_cateId').populate('destinationId').exec()
-//      if(packageData){
-//           return res.render('view_package',{
-//                packageData : packageData
-//           })
-//      }
-// } 
 var page = 1
 module.exports.View_package = async (req, res) => {
      if(req.query.page){

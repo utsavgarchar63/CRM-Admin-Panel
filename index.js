@@ -50,7 +50,7 @@ app.use('/destination_cate', require('./routs/Travel_Routs/Destination_cate'))
 // Destinations
 app.use('/destination',require('./routs/Travel_Routs/Destinations'))
 // Packages
-app.use('/package',require('./routs/Travel_Routs/package'))
+app.use('/package',require('./routs/Travel_Routs/Package'))
 // Express
 app.listen(port,(err)=>{
      if(err){
