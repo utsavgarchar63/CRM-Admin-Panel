@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Edu QLD Beginner';
+    src: url('EduQLDBeginner-Regular.woff2') format('woff2'),
+        url('EduQLDBeginner-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

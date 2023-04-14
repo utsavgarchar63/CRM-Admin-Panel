@@ -1,0 +1,139 @@
+<html>
+<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link
+  href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+  rel="stylesheet">
+<!-- Custom styles for this template-->
+<link href="/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <form class="row" action="/package/Insert_package" enctype="multipart/form-data" method="post">
+
+          <!-- Nested Row within Card Body -->
+          <div class="d-flex w-100" style="height: auto;">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+              <hr class="sidebar-divider my-0">
+              <hr class="sidebar-divider">
+              <li class="nav-item">
+                <a href="#" class="text-decoration-none text-dark px-5 py-3 bg-light w-100 d-block">Packages</a>
+              </li>
+              <hr class="sidebar-divider d-none d-md-block">
+            </ul>
+
+            <div class="p-5" style="width: 70%;">
+              <div class="mb-5">
+                <h3>Add Touriest Package</h3>
+              </div>
+              <div class="card-body">
+                
+                <div class="form-group row">
+                    <label
+                    
+                         class="col-sm-3 text-end control-label col-form-label">Select Category</label>
+                    <div class="col-sm-9">
+                         <select name="destination_cateId" id="destination_cateId" onchange="getdest()" class="form-control">
+                              <option value="">Select Destination Category</option>
+                              <% for(var i of destcat) { %>
+                                <option value="<%= i.id %>">
+                                  <%= i.destination_cate %>
+                                </option>
+                                <% } %>
+                            </select>
+                    </div>
+               </div>
+               <div class="form-group row">
+                    <label for="fname" class="col-sm-3 text-end control-label col-form-label">Select Destination</label>
+                    <div class="col-sm-9">
+                      <select name="destinationId" id="destinationId" class="form-control">
+                        <option value="">Select Destination</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 text-end control-label col-form-label">Price</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="price" placeholder="Enter Price " class="form-control" id="" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 text-end control-label col-form-label">Date</label>
+                    <div class="col-sm-9">
+                      <input type="date" name="date" placeholder="Enter Price" class="form-control" id="" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 text-end control-label col-form-label">Day</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="day" placeholder="Enter Day" class="form-control" id="" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 text-end control-label col-form-label">Package Avatar</label>
+                    <div class="col-sm-9">
+                      <input type="file" name="package_avatar" class="form-control" id="" />
+                    </div>
+                  </div>
+                  <% var transportation = ['Flight', 'Train', 'Bus']; %>
+                  <div class="form-group row">
+                    <label for="city" class="col-sm-3 text-end control-label col-form-label">Transportation</label>
+                    <div class="col-sm-9">
+                      <select name="transportation" id="transportation" class="form-control">
+                        <option value="">Select Transportation</option>
+                        <% transportation.forEach((v, i) => { %>
+                          <option value="<%= v %>"><%= v %></option>
+                        <% }); %>
+                      </select>
+                    </div>
+                  </div>
+                <br>
+                <input type="submit" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm p-2"
+                  value="Submit"></input>
+              </div>
+
+            </div>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script>
+  function getdest(){
+    var cateId = document.getElementById('destination_cateId').value;
+    $.ajax({
+      url : "/package/getdest_data" , 
+      type : "post",
+      data : {
+        'destData' : cateId
+      },
+      success : function(res){
+        $('#destinationId').html(res);
+      }
+    });
+  }
+</script>
+<!-- Bootstrap core JavaScript-->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="/js/sb-admin-2.min.js"></script>
+
+</html>

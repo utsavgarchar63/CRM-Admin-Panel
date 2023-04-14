@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway',sans-serif;
+    letter-spacing: 1px;
+}
+span{
+    font-family: 'Edu QLD Beginner';
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    object-fit: cover !important;
+    background-position: center !important  ;
+}
+.rating{
+    color: yellow   ;
+}
+/* for all btn */
+.btn{
+    position: relative;
+    background-color: white ;
+    padding: 10px 15px;
+    border: none;
+    overflow: hidden;
+    box-shadow:
+  0.7px 4.5px 3.6px rgba(0, 0, 0, 0.052),
+  1.9px 12.5px 10px rgba(0, 0, 0, 0.075),
+  4.5px 30.1px 24.1px rgba(0, 0, 0, 0.098),
+  15px 100px 80px rgba(0, 0, 0, 0.15);
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transition: 0.4s;
+    height: 3px;
+    bottom: 0px;
+    background-color: #5b9ffe;
+}
+.btn:hover::after{
+    transform: translate(-100%);
+}
+/* Header */
+header{
+    z-index:9;
+}
+header .logo{
+    font-size: 50px;
+    font-family: 'Edu QLD Beginner';
+}
+.dropdown{
+    position: relative;
+}   
+.dropdown .dropdown-nav{
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: none;
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    width: 260px;   
+}
+.dropdown:hover .dropdown-nav{
+    display: block;
+}
+.megamenu{
+    position: relative;
+}   
+.megamenu .mega-nav{
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: none;
+    top: 50px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    width: 700px;   
+}
+.megamenu:hover .mega-nav{
+    display: block;
+}
+.megamenu .mega-nav ul li a{
+    transition: 0.4s;
+    font-weight: 400;
+    color: black;
+}
+.megamenu .mega-nav ul li a:hover{
+    transform: translate(10px);
+    color: #5b9ffe;
+}
+.dropdown .dropdown-nav ul li a{
+    transition: 0.4s;
+    color: black;
+    font-weight: 500;
+}
+.dropdown .dropdown-nav ul li a:hover{
+    transform: translate(10px);
+    color: #5b9ffe;
+}
+/* Banner*/
+.banner .carousel img{
+    width: 100%;
+    height: 100vh;
+    background-position: center !important;
+    object-fit: cover;
+}
+.banner .banner-items h1{
+    font-size: 120px;   
+}
+/* about */
+.about .about-left .about-box{
+    width: 380px;
+    background-color: #5b9ffe;
+    bottom: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-image: url(../img/location.png);
+    background-position:top right;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-right: 70px;
+    padding-left: 30px;
+}
+.about .about-right{
+    text-align: left;
+    padding: 0 65px;
+}
+.about .about-right .about-line{
+    width: 4px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: rgb(170, 170, 170);
+}
+.about .about-right .about-icon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all;
+} 
+.about .about-right .about-icon:hover{
+    color:  #5b9ffe;
+}
+.about .about-right .about-icon::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid  #ccc;
+    border-radius: 50%;
+    transition: 25s all;        
+}
+.about .about-right .about-icon:hover::before{
+    content: '';
+    transform: rotate(360deg);
+    border: 2px dashed #ccc;
+}
+/* Servicecs */
+.service{
+    background-color: #F1F8FF;
+}
+.service .service-item{
+    box-shadow:0px 0px 41px rgba(0, 0, 0, 0.22);
+}
+.service .service-item i{
+    box-shadow:0px 0px 41px rgba(0, 0, 0, 0.22);
+    width: 70px;
+    text-align: center;
+    background-color: #5b9ffe;
+    line-height: 70px;
+    border-radius: 50%;
+    color: white;   
+}   
+/* place-video */
+.place-video{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 450px;
+    height: 100%;
+    overflow: hidden; 
+}   
+/* Destriction */
+.destriction-item {
+    overflow: hidden;
+}
+.destriction-item img{
+    transition: 0.7s all;
+}
+.destriction-item img:hover{
+    transform: scale(1.2);
+}
+/* Offers */
+.our-validation i{
+    color: #5b9ffe;
+}
+/* Review */
+.review{
+    background-position: center;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-image: url(../img/review.jpg);
+}
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+/* Packages */
+.packages-icon{
+    border-radius: 50%;
+    background: #5b9ffe ;
+    line-height: 50px; 
+    text-align: center;
+    width: 50px;    
+}
+/* footer */
+footer{
+    background-color:#5b9ffe ;
+}
+.footer-social-m i{
+    background-color: white;
+    color: #5b9ffe;
+    width: 45px;
+    transition: 0.4s;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.footer-social-m i:hover{
+    background-color: #5b9ffe;
+    color: white;
+}

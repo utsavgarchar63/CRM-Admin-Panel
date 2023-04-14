@@ -1,0 +1,82 @@
+<%-include('header')%>
+     <style>
+          .thumb {
+               padding: 7px 18px 4px 18px;
+               background: #1EC6B6;
+               border-radius: 18px;
+               font-weight: bold;
+               transition: 0.4s;
+          }
+
+          .thumb:hover {
+               background-color: #ff4a52;
+          }
+
+          .rows {
+               flex-wrap: wrap;
+               display: flex;
+          }
+
+          .box {
+               transition: 0.3s;
+          }
+
+          .box:hover {
+               box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+          }
+     </style>
+     <div class="mt-5 w-100 justify-content-between rows px-3 mb-4">
+          <%for(var p of packageData){%>
+               
+               <div style="width: 31% !important;" class="my-3 box">
+                    <div class="position-relative w-100">
+                         <img class="rounded-top w-100" src="<%=p.package_avatar%>" alt="">
+                         <div style="position: absolute !important; top: 20px; left: 20px;" class="text-light thumb">$
+                              <%=p.price%>
+                         </div>
+                         <div>
+                              <div class="p-4 bg-white w-100 rounded-bottom">
+                                   <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="m-0 text-dark">
+                                             <%=p.destinationId.destination%>
+                                        </h4>
+                                        <span>#<%=p.destination_cateId.destination_cate%></span>
+                                   </div>
+                                   <span style="color: #858796;">
+                                        <%=p.destinationId.country%>
+                                   </span>
+                                   <span class="my-3 d-flex align-items-center">
+                                        <div class="d-flex">
+                                             <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                             <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                             <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                             <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                             <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                        </div>
+                                        &nbsp;
+                                        <a href="#" class="text-decoration-none text-dark p">(20 Reviews)</a>
+                                   </span>
+                                   <a href="/package/read_package/<%=p.id%>" class="text-decoration-none text-light bg-primary p-2 "
+                                        style="border-radius: 18px;">Read More</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <%}%>
+               <div class="col-sm-12 col-md-7">
+                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                         <ul class="pagination">
+                              <li class="paginate_button page-item previous " >
+                                   <a href="?page=<%= prev %>"
+                                        class="page-link">Previous</a></li>
+                              <li class="paginate_button page-item active"><a href="?page=<%= curr %>"
+          
+                                        class="page-link"><%=curr%></a>
+                              <li class="paginate_button page-item next" id="dataTable_next"><a href="?page=<%= next %>"
+                                        aria-controls="dataTable" data-dt-idx="7" tabindex="0"
+                                        class="page-link">Next</a></li>
+                         </ul>
+                    </div>
+               </div>
+               </div>
+     <%-include('footer')%>

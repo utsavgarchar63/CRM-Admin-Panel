@@ -1,0 +1,111 @@
+<html>
+<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link
+  href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+  rel="stylesheet">
+<!-- Custom styles for this template-->
+<link href="/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <form class="row" method="post" action="/user/editUserdata" enctype="multipart/form-data" >
+          <input type="hidden" value="<%= data.id %>" name="Id">
+          <!-- Nested Row within Card Body -->
+          <div class="d-flex w-100" style="height: auto;">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+              
+                <img class="rounded-circle p-4"
+                   src="<%if(data.avatar == ''){%>/img/undraw_profile_2.svg<%}else{%><%=data.avatar%><%}%>" alt="...">
+           </label>
+              <hr class="sidebar-divider my-0">
+              <hr class="sidebar-divider">
+              <li class="nav-item">
+                <a href="#" class="text-decoration-none text-dark px-5 py-3 bg-light w-100 d-block">Add User</a>
+              </li>
+              <hr class="sidebar-divider d-none d-md-block">
+            </ul>
+
+            <div class="p-5" style="width: 70%;">
+              <div class="mb-4">
+                <h3>Update User</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row">
+                  <label class="col-sm-3 text-end control-label col-form-label">Name</label>
+                  <div class="col-sm-9">
+                    <input type="text" name="name"placeholder="Enter name" value="<%=data.name  %>" class="form-control" id="" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 text-end control-label col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" name="email"placeholder="Enter email" value="<%=data.email%>" class="form-control" id="" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 text-end control-label col-form-label">Age</label>
+                  <div class="col-sm-9">
+                    <input type="text" name="age" value="<%=data.age%>" placeholder="Enter age" class="form-control" id="" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="gender" class="col-sm-3 text-end control-label col-form-label">Gender</label>
+                  <div class="col-sm-9">
+                    <input type="radio" name="gender" id="gender" value="male" <% if(data.gender == "male") { %> <%= "checked" %> <% } %> /> Male
+                    <input type="radio" name="gender" id="gender" value="female" <% if(data.gender == "female") { %> <%= "checked" %> <% } %> /> Female
+                  </div>
+                </div>
+                <% var city = ['Surat', 'Dang', 'Vadodara', 'Navasari']; %>
+                <div class="form-group row">
+                  <label for="city" class="col-sm-3 text-end control-label col-form-label">City</label>
+                  <div class="col-sm-9">
+                    <select name="city" id="city" class="form-control">
+                      <option value="">--select city--</option>
+                      <% city.forEach((v, i) => { %>
+                        <option value="<%= v %>"  <% if(data.city == v) { %> <%= "selected" %> <% } %>><%= v %></option>
+                      <% }); %>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group row">
+                  <label for="description" class="col-sm-3 text-end control-label col-form-label">Select New Avatar</label>
+                  <div class="col-sm-9">
+                    <input type="file" name="avatar" id="avatar" class="form-control">
+                  </div>
+                </div>
+
+                <input type="submit" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm p-2"
+                  value="Submit"></input>
+              </div>
+
+            </div>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+
+</body>
+<!-- Bootstrap core JavaScript-->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="/js/sb-admin-2.min.js"></script>
+
+</html>

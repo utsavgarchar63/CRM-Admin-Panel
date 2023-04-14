@@ -1,0 +1,111 @@
+<%-include('header')%>
+     <!-- Begin Page Content -->
+     <div class="container-fluid mt-4">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800 ">Tables</h1>
+          <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+               For more information about DataTables, please visit the <a target="_blank"
+                    href="https://datatables.net">official DataTables documentation</a>.</p>
+
+
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+               <div class="card-header py-3">
+
+                    <form
+                         class="d-none border rounded d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                         <div class="input-group">
+                              <input type="text" name="search" class="form-control bg-light border-0 small"
+                                   placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                   <button class="btn btn-primary" type="submit">
+                                        <i class="fas fa-search fa-sm"></i>
+                                   </button>
+                              </div>
+                         </div>
+                    </form>
+               </div>
+               <div class="card-body">
+                    <div class="table-responsive">
+                         
+                         <% if(flash.success && flash.success.length > 0 ) { %>
+                              <div class="alert alert-success"><%= flash.success %></div>
+                            <% } %>
+                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                   <tr>
+                                        <th>No.</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>City</th>
+                                        <th>Age</th>
+                                        <th>Gender</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                   </tr>
+                              </thead>
+
+                              <tbody>
+                                   <%var i = 1; for(var u of user){%>
+                                        <tr>
+                                             <td>
+                                                  <%=i++%>
+                                             </td>
+                                             <td>
+                                                  <%=u.name%>
+                                             </td>
+                                             <td>
+                                                  <%=u.email%>
+                                             </td>
+                                             <td>
+                                                  <%=u.city%>
+                                             </td>
+                                             <td>
+                                                  <%=u.age%>
+                                             </td>
+                                             <td>
+                                                  <%=u.gender%>
+                                             </td>
+                                             
+                                             <td>
+                                                  <% if(u.status == true) { %>
+                                                       <a href="/user/Deactive/<%= u.id %>">Active</a>
+                                                     <% } else { %>
+                                                       <a href="/user/Active/<%= u.id %>">Deactive</a>
+                                                     <% } %>
+                                             </td>
+                                             <td>
+                                                  <a href="/user/DeleteUserdata/<%= u.id %>" class="d-inline-block text-decoration-none p-2 bg-danger text-white rounded">Delete</a>
+                                                  <a href="/user/updateUser/<%=u.id%>" class="d-inline-block text-decoration-none p-2 bg-primary text-white rounded">Update</a>
+                                                  <a href="/profile" class="d-inline-block text-decoration-none p-2 bg-info text-white rounded">Profile</a>
+                                             </td>
+                                        </tr>
+                                        <%}%>
+                              </tbody>
+                         </table>
+                         <div class="col-sm-12 col-md-7">
+                              <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                   <ul class="pagination">
+                                        <li class="paginate_button page-item previous " >
+                                             <a href="?page=<%= prev %>&search=<%= searchData %>"
+                                                  class="page-link">Previous</a></li>
+                                        <li class="paginate_button page-item active"><a href="?page=<%= curr %>&search=<%= searchData %>"
+                    
+                                                  class="page-link"><%=curr%></a>
+                                        <li class="paginate_button page-item next" id="dataTable_next"><a href="?page=<%= next %>&search=<%= searchData %>"
+                                                  aria-controls="dataTable" data-dt-idx="7" tabindex="0"
+                                                  class="page-link">Next</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+
+     </div>
+     <!-- End of Main Content -->
+     <%-include('footer')%>

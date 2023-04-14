@@ -1,0 +1,118 @@
+<%-include('header')%>
+
+
+     <div class="container-fluid mt-4">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800 ">Destination Category</h1>
+          <br>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+               <div class="card-header py-3">
+
+                    <form
+                         class="d-none border rounded d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                         <div class="input-group">
+                              <input type="text" name="search" class="form-control bg-light border-0 small"
+                                   placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                   <button class="btn btn-primary" type="submit">
+                                        <i class="fas fa-search fa-sm"></i>
+                                   </button>
+                              </div>
+                         </div>
+                    </form>
+               </div>
+               <% if(flash.success && flash.success.length > 0 ) { %>
+                    <div class="alert alert-success"><%= flash.success %></div>
+                  <% } %>
+               <div class="card-body">
+                    <div class="table-responsive">
+
+                                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                             <tr>
+                                                  <th>No</th>
+                                                  <th>Destination Category</th>
+                                                  <th>Status</th>
+                                                  <th>Action</th>
+                                             </tr>
+                                        </thead>
+
+                                        <tbody>
+                                             <%var i=1; for(var u of activedata){%>
+                                                  <tr>
+                                                       <td>
+                                                            <%=i++%>
+                                                       </td>
+                                                       <td>
+                                                            <%=u.destination_cate%>
+                                                       </td>
+                                                       <td>
+                                                            <% if(u.status==true) { %>
+                                                                 <a
+                                                                      href="/destination_cate/Deactive/<%= u.id %>">Active</a>
+                                                                 <% } else { %>
+                                                                      <a
+                                                                           href="/destination_cate/Active/<%= u.id %>">Deactive</a>
+                                                                      <% } %>
+                                                       </td>
+                                                       <td>
+                                                            <a href="/destination_cate/Delete_dest/<%=u.id%>"
+                                                                 class="d-inline-block text-decoration-none p-2 bg-danger text-white rounded">Delete</a>
+                                                  <a href="/destination_cate/Update_dest/<%=u.id%>" class="d-inline-block text-decoration-none p-2 bg-primary text-white rounded">Update</a>
+
+                                                       </td>
+                                                  </tr>
+                                                  <%}%>
+                                        </tbody>
+                                   </table>
+                                   <br>
+                                   <br>
+                                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                             <tr>
+                                                  <th>No</th>
+                                                  <th>Destination Category</th>                                                  <th>Status</th>
+                                                  <th>Action</th>
+                                             </tr>
+                                        </thead>
+
+                                        <tbody>
+                                             <%var i=1; for(var u of deactivedata){%>
+                                                  <tr>
+                                                       <td>
+                                                            <%=i++%>
+                                                       </td>
+                                                       <td>
+                                                            <%=u.destination_cate%>
+                                                       </td>
+                                                       <td>
+                                                            <% if(u.status==true) { %>
+                                                                 <a
+                                                                      href="/destination_cate/Deactive/<%= u.id %>">Active</a>
+                                                                 <% } else { %>
+                                                                      <a
+                                                                           href="/destination_cate/Active/<%= u.id %>">Deactive</a>
+                                                                      <% } %>
+                                                       </td>
+                                                       <td>
+                                                            <a href="/destination_cate/Delete_dest/<%=u.id%>"
+                                                                 class="d-inline-block text-decoration-none p-2 bg-danger text-white rounded">Delete</a>
+                                                  <a href="/destination_cate/Update_dest/<%=u.id%>" class="d-inline-block text-decoration-none p-2 bg-primary text-white rounded">Update</a>
+
+                                                       </td>
+                                                  </tr>
+                                                  <%}%>
+                                        </tbody>
+                                   </table>
+
+                    </div>
+               </div>
+          </div>
+
+     </div>
+
+     </div>
+     <%-include('footer')%>

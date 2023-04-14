@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- All css file attachment -->
+    <link rel="stylesheet" href="/front/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/front/css/style.css">
+    <link rel="stylesheet" href="/front/css/media-query.css">
+    <link rel="stylesheet" href="/front/css/all.min.css">
+    <link rel="stylesheet" href="/front/css/owl.carousel.css">
+    <link rel="stylesheet" href="/front/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/front/fonts/paragrah-font/stylesheet.css">
+    <link rel="stylesheet" type="/front/text/css" href="css/animate.css">
+    <link rel="stylesheet" href="/front/fonts/title-font/stylesheet.css">
+    <title>Square Travel– Private Traveling Agency</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/front/img/logo-icon.png">
+
+    <!-- For Reasponsive -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+          .thumb {
+               padding: 7px 18px 4px 18px;
+               background: #1EC6B6;
+               border-radius: 18px;
+               font-weight: bold;
+               transition: 0.4s;
+          }
+
+          .thumb:hover {
+               background-color: #ff4a52;
+          }
+
+          .rows {
+               flex-wrap: wrap;
+               display: flex;
+          }
+
+          .box {
+               transition: 0.3s;
+          }
+
+          .box:hover {
+               box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+          }
+</style>
+<body>
+    <!-- Header -->
+    <header class=" header position-absolute end-0 start-0">
+        <div class="container">
+            <div class="navbar-expand-lg navbar">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="#" class="d-inline-block text-decoration-none text-white"><img class="mb-2"
+                            src="/front/img/logo-icon.png" width="70px" alt="">Square</a>
+                </div>
+                <nav class="collapse  navbar-collapse justify-content-center order-1 order-lg-0" id="navbar">
+                    <ul class="fw-semibold navbar-nav fw-normal align-items-xl-center d-flex">
+                        <li class="px-1 d-block py-1"><a href="#" class="nav-link  text-white">Home</a></li>
+
+                        <!-- Mega-menu -->
+                        <div class="megamenu">
+                            <li class="px-1 d-block py-2"><a href="#" class="nav-link  text-white">Places</a></li>
+                            <!-- Meganav-->
+                            <div class="mega-nav">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="carousel slide" data-bs-ride="carousel" id="header-carousel">
+                                            <div class="carousel-inner ">
+                                                <div class="carousel-item active position-relative">
+                                                    <img style="border-bottom-left-radius: 10px; border-top-left-radius: 10px; border: none;"
+                                                        height="400px" src="/front/img/megamenu-img-1.jpg" alt="">
+                                                    <div class="position-absolute start-50 translate-middle"
+                                                        style="bottom: 20px;">
+                                                        <h2 class="text-white display-2"
+                                                            style="font-family: 'Edu QLD Beginner';">Paris</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item position-relative">
+                                                    <img style="border-bottom-left-radius: 10px; border-top-left-radius: 10px; border: none;"
+                                                        height="400px" src="/front/img/megamenu-img-2.jpg" alt="">
+                                                    <div class="position-absolute start-50  translate-middle"
+                                                        style="bottom: 20px;">
+                                                        <h2 class="text-white display-4"
+                                                            style="font-family: 'Edu QLD Beginner';">Caribbean</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item position-relative">
+                                                    <img style="border-bottom-left-radius: 10px; border-top-left-radius: 10px; border: none;"
+                                                        height="400px" src="/front/img/megamenu-img-3.jpg" alt="">
+                                                    <div class="position-absolute start-50  translate-middle"
+                                                        style="bottom: 20px;">
+                                                        <h2 class="text-white display-4"
+                                                            style="font-family: 'Edu QLD Beginner';">Goa</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4  py-2">
+                                        <ul class="navbar-nav d-block border-end">
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Canada Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Mexico Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">U.S.A
+                                                    Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Colombia Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">Peru
+                                                    Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">Chile
+                                                    Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">South
+                                                    Africa Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">Paris
+                                                    Tours</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4  py-2">
+                                        <ul class="navbar-nav d-block">
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Antarctica Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">UK
+                                                    and Britain Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">East
+                                                    Africa Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Bosnia Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Azerbaijan Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#"
+                                                    class="nav-link fw-semibold">Germany Tours</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">7
+                                                    Star - Dubai</a></li>
+                                            <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">Burj
+                                                    khalifa - Dubai </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <li class="px-1 d-block py-1"><a href="#" class="nav-link  text-white">Services</a></li>
+                            <div class="dropdown-nav">
+                                <ul class="navbar-nav d-block">
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Services <i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a></i>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Services Details<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li class="px-1 d-block py-2"><a href="#" class="nav-link  text-white">Pages</a></li>
+                            <div class="dropdown-nav border border-opacity-75">
+                                <ul class="navbar-nav d-block">
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link  d-flex position-relative fw-semibold">Blog<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link  d-flex position-relative fw-semibold">Testimonials<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Our Team<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link  d-flex position-relative fw-semibold">Our Gallery<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link  d-flex position-relative fw-semibold">FAQs<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#" class="nav-link fw-semibold">404 Error</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <li class="px-1 d-block py-2"><a href="#" class="nav-link  text-white">Blogs</a></li>
+                            <div class="dropdown-nav">
+                                <ul class="navbar-nav d-block">
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Fullwidth<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Right Sidebar<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Left Sidebar<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Mesonry<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Masonary Fullwidth<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                    <li class="px-1 d-block py-1"><a href="#"
+                                            class="nav-link d-flex position-relative fw-semibold">Single Post<i
+                                                class="fa-solid fa-angle-right d-flex align-items-center position-absolute end-0 pe-3"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li class="px-1 d-block py-1"><a href="#" class="nav-link  text-white">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icon d-md-none d-sm-none d-none d-lg-block">
+                    <a href="#" class="text-white"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="text-white"><i class="fa-solid fa-cart-shopping px-3"></i></a>
+                    <a href="#" class="text-white"><i class="fa-solid fa-earth-americas"></i></a>
+                </div>
+                <!-- Toggler -->
+                <div class="navbar-toggler ">
+                    <button data-bs-target="#navbar" data-bs-toggle="collapse">
+                        <a href="#" class="h5 navbar-toggler-icon"></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- .......... Banner .......... -->
+        <section class="banner">
+            <div class="carousel slide carousel-fade " id="carouselExampleControls" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item banner-inner active">
+                        <img src="/front/img/banner-1.jpg">
+                        <div
+                            class="bg-dark bg-opacity-25 position-absolute top-0 start-0 d-flex justify-content-center align-items-center w-100 h-100">
+                            <div class="banner-items text-center text-white w-50">
+                                <span class="display-6 mb-0">Amazing Tour</span>
+                                <h1 class="fw-semibold">America</h1>
+                                <div class="justify-content-center d-flex align-items-center">
+                                    <h5 class="fw-semibold border-end pe-2">653 reviews</h5>
+                                    <div class="rating pb-2 ps-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn fw-semibold mt-4">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-inner">
+                        <img src="/front/img/banner-2.jpg">
+                        <div
+                            class="bg-dark bg-opacity-25 position-absolute top-0 start-0 d-flex justify-content-center align-items-center w-100 h-100">
+                            <div class="banner-items text-center text-white w-50">
+                                <span class="display-6 mb-0">Amazing Tour</span>
+                                <h1 class="fw-semibold">Eiffel Tower</h1>
+                                <div class="justify-content-center d-flex align-items-center">
+                                    <h5 class="fw-semibold border-end pe-2">453 reviews</h5>
+                                    <div class="rating pb-2 ps-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn fw-semibold mt-4">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item banner-inner">
+                        <img src="/front/img/banner-3.jpg" alt="">
+                        <div
+                            class="bg-dark bg-opacity-25    position-absolute top-0 start-0 d-flex justify-content-center align-items-center w-100 h-100">
+                            <div class="banner-items text-center text-white w-50">
+                                <span class="display-6 mb-0">Amazing Tour</span>
+                                <h1 class="fw-semibold">Caribbean</h1>
+                                <div class="justify-content-center d-flex align-items-center">
+                                    <h5 class="fw-semibold border-end pe-2">993 reviews</h5>
+                                    <div class="rating pb-2 ps-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn fw-semibold mt-4">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+        <!-- ..........About.......... -->
+        <section class="about">
+            <div class="container">
+                <div class="py-5">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-lg-6">
+                            <div class="about-left">
+                                <div class="about-img position-relative">
+                                    <img src="/front/img/about-img.jpg" class="rounded-3" width="100%" alt="">
+                                    <div class="about-box position-absolute">
+                                        <h4 class="fw-semibold text-white">We Create Journeys Worth Taking For The
+                                            Traveler</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6">
+                            <div class="about-right ">
+                                <div class="about-title">
+                                    <p class="fw-semibold text-muted fw-semibol pt-sm-4 pt-4">We Create Journeys Worth
+                                        Taking For The Traveler</p>
+                                    <h2 class="mb-3 fw-semibold display-5">Our <span
+                                            style="color: #5b9ffe;">Experiences</span> <br> Meet High Quality <br>
+                                        Standards</h2>
+                                    <div class="d-flex py-2">
+                                        <div class="about-line"></div>
+                                        <span class="text-muted h5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Ut elit tellus, luctus nec</span>
+                                    </div>
+                                </div>
+                                <div class="about items d-flex align-items-center">
+                                    <span class="about-icon mx-3 my-2"><i class="fa-solid fa-user "></i></span>
+                                    <p class="fw-semibold ms-2 my-3">Professional Tour Guide</p>
+                                </div>
+                                <div class="about items d-flex align-items-center">
+                                    <span class="about-icon mx-3 my-2"><i class="fa-solid fa-earth-americas"></i></span>
+                                    <p class="fw-semibold ms-2 my-3">World Class Service</p>
+                                </div>
+                                <div class="about items d-flex align-items-center">
+                                    <span class="about-icon mx-3 my-2"><i class="fa-solid fa-wifi"></i></span>
+                                    <p class="fw-semibold ms-2 my-3">Free Wifi</p>
+                                </div>
+
+                                <div class="about items d-flex align-items-center">
+                                    <span class="about-icon mx-3 my-2"><i class="fa-solid fa-headset"></i></span>
+                                    <p class="fw-semibold ms-2 my-3">24/7 Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- video -->
+        <section class="place-video position-relative">
+            <video src="/front/videos/travel-video.mp4" type="video/mp4" muted width="100%" autoplay="autoplay"
+                loop="loop"></video>
+            <div
+                class="bg-dark bg-opacity-25 position-absolute top-0 start-0 d-flex justify-content-center align-items-center w-100 h-100  ">
+                <div class="text-center w-50 text-white" style="z-index: 1;">
+                    <h3 class="fw-semibold display-4">Costa Victoria Cochin</h3>
+                    <span class="fw-semibold"><i class="fa-solid fa-location-dot pe-2"></i>Maldives</span>
+                    <span class="fw-semibold"><i class="fa-regular fa-clock px-2"></i>4 Days + 3 Nights</span>
+                </div>
+            </div>
+        </section>
+        <!-- ..........Destriction.......... -->
+        <section class="destriction">
+            <div class="container">
+                <div class="py-5">
+                    <div class="destriction-title text-center">
+                        <p class="text-muted fw-semibold">Top Destriction</p>
+                        <h2 class="fw-semibold display-5">Find Your<span style="color: #5b9ffe;"> Escape</span></h2>
+                    </div>
+                    <div class="pt-5 w-12 row">
+                        <div class="col-6 col-sm-12 col-lg-6 ps-0 pe-lg-3 pe-sm-0">
+                            <div class="destriction-item position-relative">
+                               <a href="#">
+                                <img src="/front/img/destriction-1.jpg" class="img-fluid" width="100%" alt="">
+                               </a>
+                                <div class="destriction-content text-white  ps-4 pb-4 position-absolute start-0 bottom-0">
+                                    <span class="fw-semibold display-5">Vietname</span>
+                                    <h5 class="h6 fw-semibold">6 Tours</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pt-sm-3 col-lg-6 pt-lg-0 col-sm-12 row">
+                            <div class="col-6  p-0">
+                                <div class="destriction-item position-relative">
+                                    <a href="#">
+                                        <img src="/front/img/destriction-2.jpg" class=" img-fluid">
+                                    </a>
+                                    <div class="destriction-content text-white  ps-4 pb-4 position-absolute start-0 bottom-0">
+                                        <span class="fw-semibold display-6">Indonesia</span>
+                                        <h5 class="h6 fw-semibold">2 Tours</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 ps-3 p-0">
+                                <div class="destriction-item position-relative">
+                                    <a href="#">
+                                        <img src="/front/img/destriction-3.jpg" class="img-fluid">
+                                    </a>
+                                    <div class="destriction-content text-white  ps-4 pb-4 position-absolute start-0 bottom-0">
+                                        <span class="fw-semibold display-6">Japan</span>
+                                        <h5 class="h6 fw-semibold">3 Tours</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pe-sm-0 col-sm-12 col-lg-6 row pt-3">
+                            <div class="col-6 p-0">
+                                <div class="destriction-item position-relative">
+                                    <a href="#">
+                                        <img src="/front/img/destriction-4.jpg" class=" img-fluid">
+                                    </a>
+                                    <div class="destriction-content text-white  ps-4 pb-4 position-absolute start-0 bottom-0">
+                                        <span class="fw-semibold display-6">India</span>
+                                        <h5 class="h6 fw-semibold">4 Tours</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pe-0 ">
+                                <div class="destriction-item position-relative">
+                                    <a href="#">
+                                        <img src="/front/img/destriction-6.jpg" class="img-fluid">
+                                    </a>
+                                    <div class="destriction-content text-white  ps-4 pb-4 position-absolute start-0 bottom-0">
+                                        <span class="fw-semibold display-6">Morocco</span>
+                                        <h5 class="h6 fw-semibold">4 Tours</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pt-3 ps-sm-0 ps-lg-4 col-sm-12 col-lg-6 pe-0">
+                            <div class="destriction-item position-relative">
+                               <a href="#">
+                                <img src="/front/img/destriction-5.jpg" class="img-fluid" width="100%" alt="">
+                               </a>
+                               <div class="destriction-content text-white  ps-4 pb-4 position-absolute start-0 bottom-0">
+                                <span class="fw-semibold display-6">Thailand</span>
+                                <h5 class="h6 fw-semibold">4 Tours</h5>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ..........Offers.......... -->
+        <section class="offers">
+            <div class="container">
+                <div class="py-5">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-sm-12 col-lg-6">
+                            <div class="offers-title py-2">
+                                <p class="text-muted fw-semibold">Get to know us</p>
+                                <h2 class="fw-semibold display-5">Plan Your<span style="color: #5b9ffe;"> Trip </span>With Trevily</h2>
+                            </div>
+                            <div class="offers-content">
+                                <p class="text-muted fw-semibold">There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly.</p>
+                            </div>
+                            <div class="our-validation pt-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle-check h5 pe-3"></i>
+                                    <h6 class="fw-semibold">Invest in your simply neighborhood</h6>
+                                </div>
+                                <div class="py-2 d-flex align-items-center">
+                                    <i class="fa-solid fa-circle-check h5 pe-3"></i>
+                                    <h6 class="fw-semibold">Support people in free text extreme need</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-circle-check h5 pe-3"></i>
+                                    <h6 class="fw-semibold">Largest global industrial business community</h6>
+                                </div>
+                            </div>
+                            <a href="#" class="btn fw-semibold mt-4">BOOK WITH US NOW   </a>
+                        </div>
+                        <div class="col-6 col-sm-12 col-lg-6 pb-5">
+                            <div class="position-relative">
+                                <img src="/front/img/offer-paris.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ..........Services.......... -->
+        <section class="service">
+            <div class="container">
+                <div class="py-5">
+                    <div class="row">
+                        <div class="col-3 col-sm-6 col-lg-4 col-xl-3 text-center">
+                            <div class="service-item px-3 py-5 bg-white">
+                                <i class="fa-solid fa-bed h4"></i>
+                                <h5 class="fw-semibold py-3">Delux Room</h5>
+                                <p class="fw-semibold text-muted">Lorem ipsum dolor sit amet consetetur sadipscing elitr
+                                    sed diam nonumy</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 col-lg-4 col-xl-3 text-center">
+                            <div class="service-item px-3 py-5 bg-white">
+                                <i class="fa-solid fa-carrot h4"></i>
+                                <h5 class="fw-semibold py-3">Delicoius Food</h5>
+                                <p class="fw-semibold text-muted">Lorem ipsum dolor sit amet consetetur sadipscing elitr
+                                    sed diam nonumy</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 col-lg-4 pt-sm-4 col-xl-3 pt-lg-0 text-center">
+                            <div class="service-item px-3 py-5 bg-white">
+                                <i class="fa-solid fa-car h4"></i>
+                                <h5 class="fw-semibold py-3">Airport Taxi</h5>
+                                <p class="fw-semibold text-muted">Lorem ipsum dolor sit amet consetetur sadipscing elitr
+                                    sed diam nonumy</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 col-lg-4 pt-sm-4 pt-xl-0 col-xl-3 text-center">
+                            <div class="service-item px-3 py-5 bg-white">
+                                <i class="fa-solid fa-chess h4"></i>
+                                <h5 class="fw-semibold py-3">Game Room</h5>
+                                <p class="fw-semibold text-muted">Lorem ipsum dolor sit amet consetetur sadipscing elitr
+                                    sed diam nonumy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  travelers Review -->
+        <section class="review">
+            <div class="container">
+                <div class="py-5">
+                    <div class="d-flex align-items-center">
+                        <div class="col-sm-5 col-md-5 col-lg-4 col-xl-4 px-3 text-white">
+                            <span class="display-3 fw-semibold">23.506 +</span>
+                            <h4 class="fw-semibold py-2">Happy travelers and what’s they are saying?</h4>
+                            <p class="fw-semibold">His postulant posidonium adversarium. Ius tollit tamquam indoctum ea, cu quo equidem
+                                perfecto adipiscing.</p>
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="row mx-1">
+                                    <div class="rounded" style="overflow: hidden;">
+                                        <div class="col-sm-12 col-xl-12  review-item row align-items-center p-5 bg-white rounded ">
+                                            <div class="col-sm-12 col-lg-6 text-center px-1">
+                                                <div class="travelers-review">
+                                                    <span class="fw-semibold py-2 h4 d-block">John Anderson</span>
+                                                    <h4 class="fw-semibold h6">Adventure Journalist</h4>
+                                                    <div class="rating pb-2 ps-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>"Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum
+                                                        ac primis fusce, atque! Vivamus. Non cupiditate natus
+                                                        excepturi,"</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-6">
+                                                <img src="/front/img/travelers-1.jpg" class="m-0 img-fluid rounded-circle" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row mx-1">
+                                    <div class="rounded" style="overflow: hidden;">
+                                        <div class="col-sm-12 review-item row align-items-center p-5 bg-white rounded ">
+                                            <div class="col-sm-12 col-lg-6 text-center px-1">
+                                                <div class="travelers-review">
+                                                    <span class="fw-semibold py-2 h4 d-block">Neha karkar</span>
+                                                    <h4 class="fw-semibold h6">Adventure Journalist</h4>
+                                                    <div class="rating pb-2 ps-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>"Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum
+                                                        ac primis fusce, atque! Vivamus. Non cupiditate natus
+                                                        excepturi,"</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-6">
+                                                <img src="/front/img/travelers-2.jpg" class="m-0 img-fluid rounded-circle" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row mx-1">
+                                    <div class="rounded" style="overflow: hidden;">
+                                        <div class="col-sm-12 review-item row align-items-center p-5 bg-white rounded ">
+                                            <div class="col-sm-12 col-lg-6 text-center px-1">
+                                                <div class="travelers-review">
+                                                    <span class="fw-semibold py-2 h4 d-block">Jones	Johnson</span>
+                                                    <h4 class="fw-semibold h6">Adventure Journalist</h4>
+                                                    <div class="rating pb-2 ps-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>"Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum
+                                                        ac primis fusce, atque! Vivamus. Non cupiditate natus
+                                                        excepturi,"</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-6">
+                                                <img src="/front/img/travelers-3.jpg" class="m-0 img-fluid rounded-circle" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row mx-1">
+                                    <div class="rounded" style="overflow: hidden;">
+                                        <div class="col-sm-12 review-item row align-items-center p-5 bg-white rounded ">
+                                            <div class="col-sm-12 col-lg-6 text-center px-1">
+                                                <div class="travelers-review">
+                                                    <span class="fw-semibold py-2 h4 d-block">Brown Williams</span>
+                                                    <h4 class="fw-semibold h6">Adventure Journalist</h4>
+                                                    <div class="rating pb-2 ps-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>"Dolorum aenean dolorem minima! Voluptatum? Corporis condimentum
+                                                        ac primis fusce, atque! Vivamus. Non cupiditate natus
+                                                        excepturi,"</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-6">
+                                                <img src="/front/img/travelers-4.jpg" class="m-0 img-fluid rounded-circle" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Packages -->
+        <section class="packages">
+            <div class="container">
+                <div class="py-5">
+                    <div class="packages-title text-center mb-5">
+                        <p class="fw-semibold text-muted">Promotion</p>
+                        <h2 class="fw-semibold display-5">Our <span style="color: #5b9ffe;">Packages</span></h2>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="packages-item col-4 col-sm-6 col-lg-4">
+                            <div class="position-relative">
+                                <img src="/front/img/packages-1.jpg" class="img-fluid " alt="">
+                                <div class="packages-icon position-absolute translate-middle top-100  end-0">
+                                    <img src="/front/img/packages-icon-1.png" width="25px" alt="">
+                                </div>
+                            </div>
+                            <div class="p-4 packages-content border">
+                                <h4 class="fw-semibold ">Berlin</h4>
+                                <p class="text-muted mb-0 fw-semibold"><i
+                                        class="fa-solid fa-location-dot pe-2 opacity-25"></i>Europe</p>
+                                <hr class="opacity-25 mb-0">
+                                <div class="justify-content-between py-2 d-flex align-items-center">
+                                    <p class="fw-semibold mb-0" style="line-height: 25px;">CULTURAL<br>RELAX</p>
+                                    <span class="text-muted fw-semibold h2">700$</span>
+                                </div>
+                                <hr class="opacity-25 mt-0">
+                                <p class="fw-semibold mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                                <a href="#" class="mt-2 btn fw-semibold ">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="packages-item col-4 col-sm-6 col-lg-4">
+                            <div class="position-relative">
+                                <img src="/front/img/packages-2.jpg" class="img-fluid " alt="">
+                                <div class="packages-icon position-absolute translate-middle top-100  end-0">
+                                    <img src="/front/img/packages-icon-1.png" width="25px" alt="">
+                                </div>
+                            </div>
+                            <div class="p-4 packages-content border">
+                                <h4 class="fw-semibold ">Hong Kong</h4>
+                                <p class="text-muted mb-0 fw-semibold"><i
+                                        class="fa-solid fa-location-dot pe-2 opacity-25"></i>Asia</p>
+                                <hr class="opacity-25 mb-0">
+                                <div class="justify-content-between py-2 d-flex align-items-center">
+                                    <p class="fw-semibold mb-0" style="line-height: 25px;">HISTORY<br>CULTURAL</p>
+                                    <span class="text-muted fw-semibold h2">500$</span>
+                                </div>
+                                <hr class="opacity-25 mt-0">
+                                <p class="fw-semibold mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                                <a href="#" class="mt-2 btn fw-semibold ">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="packages-item col-4 pt-sm-4 pt-lg-0 col-lg-4 col-sm-6">
+                            <div class="position-relative">
+                                <img src="/front/img/packages-3.jpg" class="img-fluid " alt="">
+                                <div class="packages-icon position-absolute translate-middle top-100  end-0">
+                                    <img src="/front/img/packages-icon-1.png" width="25px" alt="">
+                                </div>
+                            </div>
+                            <div class="p-4 packages-content border">
+                                <h4 class="fw-semibold ">San Francisco</h4>
+                                <p class="text-muted mb-0 fw-semibold"><i
+                                        class="fa-solid fa-location-dot pe-2 opacity-25"></i>United States</p>
+                                <hr class="opacity-25 mb-0">
+                                <div class="justify-content-between py-2 d-flex align-items-center">
+                                    <p class="fw-semibold mb-0" style="line-height: 25px;">SPORT<br>RELAX</p>
+                                    <span class="text-muted fw-semibold h2">400$</span>
+                                </div>
+                                <hr class="opacity-25 mt-0">
+                                <p class="fw-semibold mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                                <a href="#" class="mt-2 btn fw-semibold ">Learn more</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="mt-5 w-100 justify-content-between rows px-3 mb-4">
+                        <%for(var p of packageData){%>
+                             
+                             <div style="width: 31% !important;" class="my-3 box">
+                                  <div class="position-relative w-100">
+                                       <img class="rounded-top w-100" src="<%=p.package_avatar%>" alt="">
+                                       <div style="position: absolute !important; top: 20px; left: 20px;" class="text-light thumb">$
+                                            <%=p.price%>
+                                       </div>
+                                       <div>
+                                            <div class="p-4 bg-white w-100 rounded-bottom">
+                                                 <div class="d-flex justify-content-between align-items-center">
+                                                      <h4 class="m-0 text-dark" style="font-weight: bold;">
+                                                           <%=p.destinationId.destination%>
+                                                      </h4>
+                                                      <span style="font-weight: bold;">#<%=p.destination_cateId.destination_cate%></span>
+                                                 </div>
+                                                 <span style="font-weight: bold; color: #858796;">
+                                                      <%=p.destinationId.country%>
+                                                 </span>
+                                                 <span class="my-3 d-flex align-items-center">
+                                                      <div class="d-flex">
+                                                           <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                                           <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                                           <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                                           <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                                           <i class="fa fa-star" style="font-size: 13px; color: orange;"></i>
+                                                      </div>
+                                                      &nbsp;
+                                                      <a href="#" style="font-weight: bold;" class="text-decoration-none text-dark p">(20 Reviews)</a>
+                                                 </span>
+                                                 <a href="/package/read_package/<%=p.id%>" class="text-decoration-none text-light  bg-primary p-2 "
+                                                      style="border-radius: 18px; font-weight: bold;">Read More</a>
+                                            </div>
+                                       </div>
+                                  </div>
+                             </div>
+                             <%}%>
+                             <div class="col-sm-12 col-md-7">
+                                  <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                       <ul class="pagination">
+                                            <li class="paginate_button page-item previous " style="font-weight: bold;">
+                                                 <a href="?page=<%= prev %>"
+                                                      class="page-link">Previous</a></li>
+                                            <li class="paginate_button page-item active"style="font-weight: bold;"><a href="?page=<%= curr %>"
+                        
+                                                      class="page-link"><%=curr%></a>
+                                            <li class="paginate_button page-item next" style="font-weight: bold;" id="dataTable_next"><a href="?page=<%= next %>"
+                                                      aria-controls="dataTable" data-dt-idx="7" tabindex="0"
+                                                      class="page-link">Next</a></li>
+                                       </ul>
+                                  </div>
+                             </div>
+                             </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="py-5">
+                    <div class="row">
+                        <div class="col-3 col-sm-6 col-lg-4 col-xl-3">
+                            <h3 class="fw-semibold h4 text-white pb-4">Contact Information</h3>
+                            <ul class="navbar-nav">
+                                <li class="list-unstyled h6"><a href="#"
+                                        class="text-decoration-none  d-block fw-semibold text-white"><i
+                                            class=" h6 pe-2 fa-solid fa-headset"></i>1-800-700-600</a></li>
+                                <hr class="opacity-25 m-0 pt-3 text-white">
+                                <li class=" list-unstyled h6"><a href="#"
+                                        class="text-decoration-none d-block fw-semibold text-white"><i
+                                            class=" h6 pe-2 fa-solid fa-envelope"></i>biz@cotch-official.com</a></li>
+                                <hr class="opacity-25 m-0 pt-3 text-white">
+                                <li class=" list-unstyled h6"><a href="#"
+                                        class="text-decoration-none d-block fw-semibold text-white"><i
+                                            class=" h6 pe-2 fa-solid fa-location-dot"></i>60 East 65th Street, New
+                                        York</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-sm-6 col-lg-4 col-xl-3">
+                            <h3 class="fw-semibold h4 text-white pb-4">Recent news</h3>
+                            <ul class="navbar-nav">
+                                <li class="list-unstyled p"><a href="#"
+                                        class="text-decoration-none  d-block fw-semibold text-white">The towns where
+                                        travellers lose track of time</a></li>
+                                <p class="text-white fw-semibold p opacity-50">September 05-2016</p>
+                                <hr class="opacity-25 m-0 pt-3 text-white">
+                                <li class=" list-unstyled p"><a href="#"
+                                        class="text-decoration-none d-block fw-semibold text-white">biz@cotch-official.com</a>
+                                </li>
+                                <p class="text-white fw-semibold p opacity-50">June 26-2016</p>
+                                <hr class="opacity-25 m-0 pt-3 text-white">
+                                <li class=" list-unstyled p"><a href="#"
+                                        class="text-decoration-none d-block fw-semibold text-white">Mother City markets:
+                                        where to shop ’til you drop in Cape Town</a></li>
+                                <p class="text-white fw-semibold p opacity-50">May 30-2016</p>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-sm-6 row d-block px-3 pt-sm-4 pt-lg-0 col-xl-3 col-lg-4">
+                            <h3 class="fw-semibold h4 text-white pb-4">Useful Links</h3>
+                            <div class="row">
+                                <div class="col-6 d-block">
+                                    <ul class="navbar-nav">
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Safety</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Travel
+                                                Picks</a></li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Mobiles</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Why Host</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Social</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Help
+                                                Topics</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="navbar-nav">
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">About</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Job</a></li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Press
+                                                rel.</a></li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Blog</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Content</a>
+                                        </li>
+                                        <li class="list-unstyled p py-2"><a href="#"
+                                                class="text-decoration-none d-block fw-semibold text-white">Map</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 pt-sm-4 col-lg-4 col-xl-3 pt-xl-0">
+                            <h3 class="fw-semibold h4 text-white pb-4">Our Social media links</h3>
+                            <p class="text-white fw-semibold">Enter your email address for our mailing list to keep
+                                yourself updated.</p>
+                            <div class=" footer-social-m">
+                                <span class="pe-2"><i class="fa-brands fa-facebook-f"></i></span>
+                                <span class="pe-2"><i class="fa-brands fa-instagram"></i></span>
+                                <span class="pe-2"><i class="fa-brands fa-twitter"></i></span>
+                                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+<!-- All js file attachment -->
+<script src="/front/js/bootstrap.bundle.min.js"></script>
+<script src="/front/js/jquery.min.js"></script>
+<script src="/front/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/front/js/wow.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        margin: 0,
+        autoplay: 2000,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    })
+</script>
+<script>
+    // WOW
+    wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset: 100,
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function () {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+    };
+</script>
+
+</html>
