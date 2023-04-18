@@ -6,7 +6,7 @@ const admin = require('../model/admin_model')
 routs.post('/session',passport.authenticate('local',{failureRedirect :'/login'}),adminController.dashboardSession)
 // Dashboard
 routs.get('/',adminController.home)
-routs.get('/admin',passport.checkAuthentication,adminController.dashboard)
+routs.get('/admin',passport.checkAuthentication,adminController.admin)
 // Register
 routs.get('/register',adminController.register)
 routs.post('/registration',adminController.registration)

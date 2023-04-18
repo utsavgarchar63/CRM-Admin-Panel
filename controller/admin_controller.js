@@ -9,7 +9,7 @@ module.exports.dashboardSession = (req, res) => {
      return res.redirect('/admin');
 }
 
-module.exports.dashboard=(req, res) => {
+module.exports.admin=(req, res) => {
 
      res.render('dashboard')
 

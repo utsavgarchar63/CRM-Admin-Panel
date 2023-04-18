@@ -52,7 +52,7 @@ module.exports.ViewUserdata = async (req, res) => {
     });
 }
 // Delete User
-module.exports.DeleteUserdata = async (req, res) => {
+module.exports.DeleteUserdata = async (req, res) => {z
     const userdata = await user.findById(req.params.id);
     if (userdata.user_avatar) {
         fs.unlinkSync(path.join(__dirname, userdata.user_avatar))
@@ -77,7 +77,7 @@ module.exports.UpdateUser = async (req, res) => {
     const userData = await user.findById(req.params.id)
     if (userData) {
         res.render('updateUser', {
-            data: userData
+            data: userData  
         })
     }
 }
